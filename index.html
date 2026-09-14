@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlarmX Privacy Policy</title>
+<meta name="description" content="How AlarmX handles your data. No account, no server, no analytics.">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff; --fg: #16181d; --muted: #5b6270;
+  --rule: #e4e6eb; --accent: #5b3df5; --card: #f6f7f9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0e14; --fg: #e6e8ee; --muted: #9aa2b1;
+    --rule: #222734; --accent: #9a86ff; --card: #131823;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 20px 72px;
+  background: var(--bg); color: var(--fg);
+  font: 16px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 680px; margin: 0 auto; }
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.5px; margin: 48px 0 6px; }
+h2 {
+  font-size: 19px; letter-spacing: -0.2px; margin: 40px 0 10px;
+  padding-top: 20px; border-top: 1px solid var(--rule);
+}
+h2:first-of-type { border-top: 0; }
+strong { font-weight: 650; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+ul { padding-left: 22px; }
+li { margin: 7px 0; }
+code {
+  background: var(--card); padding: 2px 6px; border-radius: 5px; font-size: 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 15px; }
+th, td {
+  text-align: left; padding: 9px 10px;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th {
+  color: var(--muted); font-weight: 600; font-size: 13px;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+footer {
+  margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: 14px;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>AlarmX Privacy Policy</h1>
+<p class="updated"><strong>Last updated: 14 September 2026</strong></p>
+<h2>The short version</h2>
+<p>AlarmX does not have an account system, a server, or an analytics service. Your alarms, your history and your statistics are stored in a database on your phone and are never sent anywhere.</p>
+<p>The only data that leaves your device is what Google's advertising SDK collects when you choose to watch an ad, and that only happens if you tap the button.</p>
+<h2>What AlarmX stores on your phone</h2>
+<p>All of this lives in a local database on your device. Uninstalling AlarmX deletes it. None of it is backed up to us, because there is no "us" to back it up to.</p>
+<ul>
+<li>Your alarms: times, repeat days, labels, which challenges you picked, and your difficulty, personality and snooze settings.</li>
+<li>Your history: which challenges you attempted, whether you cleared them, how long you took, and whether you skipped any.</li>
+<li>Your progress: XP, level, streaks and unlocked achievements.</li>
+<li>Your app settings: theme, animation and haptic preferences.</li>
+</ul>
+<h2>The microphone</h2>
+<p>Two challenges use the microphone, and only while that challenge is on screen:</p>
+<ul>
+<li><strong>Face Wash</strong> listens for the sound of running water.</li>
+<li><strong>Voice Challenge</strong> listens for a spoken phrase.</li>
+</ul>
+<p><strong>Face Wash never records anything.</strong> It reads the live audio stream and reduces each fragment to a single loudness number, then discards the audio immediately. No audio file is created, written to storage, buffered for playback, or transmitted. The technical reason this is guaranteed rather than promised: the app uses a streaming API that has no output path, so there is nowhere for a recording to go.</p>
+<p><strong>Face Wash cannot tell whether you washed your face.</strong> It listens for sound that is louder than your room and unusually steady, which is what running water sounds like — and also what a hairdryer, a shower or passing traffic sounds like. The app says "water activity detected", never that it knows what you did.</p>
+<p><strong>Voice Challenge uses Android's speech recognition.</strong> This is a system service provided by your device, not by AlarmX. Depending on your phone and its installed language packs, Android may process speech on the device or send it to Google's servers. AlarmX does not control which, receives only the recognised text, and does not store it. Your device's own privacy settings govern that processing.</p>
+<p>This matters more if you pick a language other than English. On-device recognition packs are common for English and much less common for other languages, so choosing one makes it more likely your phone sends the audio to Google rather than handling it locally. AlarmX cannot tell which is happening and cannot change it — but you can see and manage the packs your phone has in Android's own settings.</p>
+<p>The microphone is released the moment a challenge ends, and AlarmX never listens in the background.</p>
+<h2>Physical activity</h2>
+<p>The <strong>Get Moving</strong> challenge reads your step count while it is running, so it can tell how far you have walked. It reads only the step counter, only during that challenge, and the count is not stored or transmitted.</p>
+<h2>Sensors</h2>
+<p>The Motion and Daylight challenges read the accelerometer and the ambient light sensor while running. These readings are used in the moment and discarded. Neither requires a permission, and neither is stored.</p>
+<h2>Advertising</h2>
+<p>AlarmX offers an optional "watch an ad to skip this challenge" button. It is never forced: if you never tap it, no ad is ever loaded or shown.</p>
+<p>When you do tap it, Google AdMob loads and displays a rewarded ad. AdMob is operated by Google, not by AlarmX, and it collects data according to Google's own policies — typically including your advertising ID, approximate location derived from your IP address, and device information, used for ad selection and fraud prevention.</p>
+<p>AlarmX does not receive, see or store any of that. We are told only whether you watched enough of the ad to earn the skip.</p>
+<p>Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> How Google uses data from apps: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p>You can reset or delete your advertising ID in Android Settings under Privacy → Ads.</p>
+<h2>What AlarmX does not do</h2>
+<ul>
+<li>No account, sign-in, email address or phone number.</li>
+<li>No analytics, crash reporting or telemetry of any kind.</li>
+<li>No cloud sync or backup to our servers. There are no servers.</li>
+<li>No selling or sharing of personal data with anyone.</li>
+<li>No location tracking. AlarmX has no location permission.</li>
+<li>No contacts, photos, files or messages.</li>
+<li>No background listening.</li>
+</ul>
+<h2>Children</h2>
+<p>AlarmX is not directed at children under 13 and we do not knowingly collect any data from them. Because the app collects nothing, there is nothing to delete; if you are concerned about the advertising component, the ad button can simply be left alone.</p>
+<h2>Deleting your data</h2>
+<p>Uninstall the app. Everything AlarmX stored is removed with it. There is no copy anywhere else.</p>
+<h2>Permissions, and why each exists</h2>
+<table>
+<tr><th>Permission</th><th>Why</th><th>When</th></tr>
+<tr><td>Notifications</td><td>The ringing alarm is delivered as a notification. Without it no alarm can reach you.</td><td>Always</td></tr>
+<tr><td>Exact alarms</td><td>Fires the alarm at the exact minute rather than whenever the system finds convenient.</td><td>Always</td></tr>
+<tr><td>Full-screen intent</td><td>Lets the alarm take over a locked screen.</td><td>When an alarm fires</td></tr>
+<tr><td>Microphone</td><td>Face Wash and Voice Challenge.</td><td>Only while one is running</td></tr>
+<tr><td>Physical activity</td><td>Counting steps in Get Moving.</td><td>Only while it is running</td></tr>
+<tr><td>Run at startup</td><td>Restores your alarms after a reboot, so they still fire.</td><td>On boot</td></tr>
+<tr><td>Foreground service</td><td>Keeps the alarm ringing reliably.</td><td>While an alarm is ringing</td></tr>
+<tr><td>Vibrate, wake lock</td><td>Vibration and waking the screen for the alarm.</td><td>While an alarm is ringing</td></tr>
+<tr><td>Battery optimisation</td><td>Only to send you to the system settings page, so you can choose to exempt AlarmX. Never changed without you.</td><td>Only if you tap it</td></tr>
+</table>
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it and the updated version will be published alongside the app.</p>
+<h2>Contact</h2>
+<p>Questions about this policy, or about what AlarmX does with your data:</p>
+<p>arnasapp1@gmail.com</p>
+<footer>AlarmX &middot; <a href="mailto:arnasapp1@gmail.com">arnasapp1@gmail.com</a></footer>
+</main>
+</body>
+</html>
